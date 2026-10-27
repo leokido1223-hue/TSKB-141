@@ -2,15 +2,21 @@
 #include <math.h>
 
 /**
- * @brief Считает переменную а
- * @return выводит почитанную переменную
+ * @brief Вычисляет переменную а
+ * @param х - значение х
+ * @param y - значение y
+ * @param z - значение z
+ * @return выводит высчитанную переменную
  */
 
 double a(const double x, const double y, const double z);
 
 /**
  * @brief Считает переменную b
- * @return выводит почитанную переменную
+ * @param х - значение х
+ * @param y - значение y
+ * @param z - значение z
+ * @return выводит высчитанную переменную
  */
 
 double b(const double x, const double y, const double z);
