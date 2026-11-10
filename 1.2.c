@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <math.h>
+
+/**
+ * @brief Считывает с клавиатуры занчение с плавающей точкой
+ * @param s - значение сантиметров, введённое с клавиатуры
+ * @return Считанное значение
+ */
+
+double getDouble();
+
+/**
+ * @brief Принимает значение сантиметров и делением на 2.5 переводит его в дюймы
+ * @param s - значение переменной
+ * @return Значение сантиметров в дюймах
+ */
+
+double ret(const double side);
+
+/*
+*@brief точка входа в программу
+*@return 0, если программа выполнена корректно, иначе не 0
+*/
+
+int main()
+{
+    double s = getDouble();
+    printf("%lf сантиметров\n",s);
+    printf("Это %lf дюймов",ret(s));
+    return 0;
+}
+
+double ret(const double s)
+{
+    return s/2.5;
+}
+
+double getDouble()
+{
+    double s = 0.0;
+    scanf("%lf",&s);
+    return s;
+}
